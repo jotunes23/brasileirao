@@ -1,0 +1,25 @@
+{
+  "name": "brasileirao",
+  "version": "1.0.0",
+  "description": "projeto de tabela do campeonato brasileiro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonatas Antunes",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgo": "^2.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {}
+}
