@@ -70,7 +70,7 @@ gulp.task('otimizarSVG', otimizarSVG);
 // Função de watch do Gulp
 function watch() {
   gulp.watch('css/scss/*.scss', compilaSass);
-  gulp.watch('js/main/*.js', gulpJS);
+  gulp.watch('js/app/*.js', gulpJS);
   gulp.watch(['*.html']).on('change', browserSync.reload);
   gulp.watch('img/svg/*', otimizarSVG);
 }

@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <title>Brasileirão</title>
 </head>
+
 <body>
-  <h1>Brasileirão</h1>
+
+  <div class="container">
+    <h1>Brasileirão</h1>
+
+    <table id="tabela" class="table table-sm table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">posição</th>
+          <th scope="col">pontos</th>
+          <th scope="col">time</th>
+          <th scope="col">vitórias</th>
+          <th scope="col">gols</th>
+          <th scope="col">empates</th>
+          <th scope="col">derrotas</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <button id="play" type="button" class="btn btn-primary btn-lg" data-js="play">Jogar</button>
+  </div>
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script src="js/app.js"></script>
 </body>
+
 </html>

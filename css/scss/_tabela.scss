@@ -1,0 +1,38 @@
+table#tabela {
+  thead {
+    tr {
+      th {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        background: lightgreen;
+      }
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8) {
+        background: lightgoldenrodyellow;
+      }
+      &:nth-child(17),
+      &:nth-child(18),
+      &:nth-child(19),
+      &:nth-child(20) {
+        background: lightcoral;
+      }
+    }
+    td {
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
