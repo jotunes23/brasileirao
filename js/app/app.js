@@ -2,6 +2,7 @@ var brasileirao = {
   init: function () {
     brasileirao.makeRounds();
     brasileirao.play();
+    brasileirao.reset();
     brasileirao.table();
   },
 
@@ -227,6 +228,7 @@ var brasileirao = {
     });
 
     brasileirao.table();
+    brasileirao.resultList();
   },
 
   table: function () {
@@ -247,9 +249,30 @@ var brasileirao = {
     $('#tabela tbody').html(itemList.toString());
   },
 
+  resultList: function () {
+    var resultados = brasileirao.data.results;
+
+    var resultadosList = resultados.map(function (resultado, index) {
+      return '<li>' +
+        resultado.competidor + ' ' + resultado.competidorGols +
+        ' x ' +
+        resultado.oponente + ' ' + resultado.oponenteGols +
+        '</li>';
+    });
+
+    $('#resultados').append(resultadosList.join(''));
+  },
+
+  reset: function () {
+    $(document).on('click', 'button[data-js="reset"]', function(event) {
+      location.reload();
+    });
+  },
+
   play: function() {
     $(document).on('click', 'button[data-js="play"]', function(event) {
       $(this).attr('disabled', 'disabled');
+      $('button[data-js="reset"]').prop("disabled", false);
       brasileirao.playGames();
     });
   }

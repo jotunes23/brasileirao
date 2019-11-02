@@ -30,7 +30,12 @@
       <tbody></tbody>
     </table>
 
-    <button id="play" type="button" class="btn btn-primary btn-lg" data-js="play">Jogar</button>
+    <div class="buttongroup">
+      <button id="play" type="button" class="btn btn-success btn-lg" data-js="play">Jogar</button>
+      <button id="reset" type="button" class="btn btn-danger btn-lg" data-js="reset" disabled>Resetar</button>
+    </div>
+
+    <ul id="resultados"></ul>
   </div>
 
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
